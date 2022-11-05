@@ -146,6 +146,9 @@ h4 {
 .card {
     opacity: 0;
     animation: appear 1s forwards;
+    
+    width: 365px;
+    height: 580px;
 }
 
 footer {
@@ -172,7 +175,7 @@ footer {
 
 @media (min-width: 1000px) {
     #cards {
-        max-width: 800px;
+        max-width: 1200px;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
