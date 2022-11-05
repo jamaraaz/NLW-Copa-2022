@@ -13,12 +13,20 @@ Meu Deus que foda*/
     --card-title-border-color: #746615;
     --card-font-color: #f7DD43;
     --card-color-primary: #f7dd43;
+    --bg: url(./assets/bg-yellow.svg);
+    --font-color: #1d1c19;
 }
 
 body.blue {
     --card-title-border-color: #338aF3;
-    --card-font-color: #338af3;
     --card-color-primary: #338aF3;
+    --bg: url(./assets/bg-blue.svg)
+}
+
+body.green {
+    --card-title-border-color: #047c3f;
+    --card-color-primary: #047c3f;
+    --bg: url(./assets/bg-green.svg)
 }
 
 ul {
@@ -27,7 +35,7 @@ ul {
 
 body {
     background-color: #121214;
-    background-image: url(./assets/bg.svg);
+    background-image: var(--bg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,7 +134,7 @@ h4 {
 .card ul li strong:hover,
 .card ul li img:hover {
     transform: scale(1.3);
-    cursor: pointer;
+    cursor: default;
 }
 
 
@@ -138,6 +146,17 @@ h4 {
 .card {
     opacity: 0;
     animation: appear 1s forwards;
+}
+
+footer {
+    background-color: var(--card-font-color);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: var(--font-color);
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Roboto light', sans-serif;
 }
 
 @keyframes appear {
